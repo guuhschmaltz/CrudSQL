@@ -37,17 +37,30 @@
             <Label HorizontalAlignment="Center" VerticalAlignment="Center">Cargo</Label>
             <TextBox x:Name="txtCargo"  Width="150" Height="30" Margin="5"/>
         </StackPanel>
-        <DataGrid Grid.Row="3" Grid.ColumnSpan="3" Grid.RowSpan="2" SelectionMode="Single" IsReadOnly="True" ItemsSource="{Binding}" AutoGenerateColumns="False" CanUserReorderColumns="False" CanUserDeleteRows="False" CanUserAddRows="False" CanUserResizeRows="False" CanUserResizeColumns="False">
+        <DataGrid x:Name="gridUsuarios"
+                  Grid.Row="3"
+                  Grid.ColumnSpan="3"
+                  Grid.RowSpan="2"
+                  SelectionMode="Single"
+                  IsReadOnly="True"
+                  ItemsSource="{Binding}" 
+                  AutoGenerateColumns="False" 
+                  CanUserReorderColumns="False" 
+                  CanUserDeleteRows="False" 
+                  CanUserAddRows="False" 
+                  CanUserResizeRows="False"
+                  CanUserResizeColumns="False"
+                  MouseDoubleClick="gridUsuarios_MouseDoubleClick">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Id" Binding="{Binding Id}" Width="25*" />
-                <DataGridTextColumn Header="Nome" Binding="{Binding Nome}" Width="25*" />
+                <DataGridTextColumn Header="Id" Binding="{Binding Id}" Width="5*" />
+                <DataGridTextColumn Header="Nome" Binding="{Binding Nome}" Width="45*" />
                 <DataGridTextColumn Header="Cidade" Binding="{Binding Cidade}" Width="25*" />
                 <DataGridTextColumn Header="Cargo" Binding="{Binding Cargo}" Width="25*" />
             </DataGrid.Columns>
         </DataGrid>
         <Button x:Name="btnInsert" Content="btnInsert" Width="100" Height="30" Grid.Column="2" Grid.Row="2" Click="btnInsert_Click"/>
         <Button x:Name="btnSelect" Content="btnSelect" Width="100" Height="30" Grid.Column="0" Grid.Row="2" Click="btnSelect_Click"/>
-        <Button x:Name="btnUpdate" Content="btnUpdate" Width="100" Height="30" Grid.Column="0" Grid.Row="5" Click="btnUpdate_Click"/>
+        <Button x:Name="btnUpdate" Content="btnUpdate" Width="100" Height="30" Grid.Column="0" Grid.Row="5" Click="btnUpdate_Click" />
         <Button x:Name="btnDelete" Content="btnDelete" Width="100" Height="30" Grid.Column="2" Grid.Row="5" Click="btnDelete_Click"/>
     </Grid>
     

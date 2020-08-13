@@ -74,12 +74,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="CrudSQLDataSet.Designer.cs">
+    <Compile Include="Banco de Dados\UsuarioDAL.cs" />
+    <Compile Include="DBExemploDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CrudSQLDataSet.xsd</DependentUpon>
+      <DependentUpon>DBExemploDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DataHelper.cs" />
     <Compile Include="Usuario.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -112,16 +112,16 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="CrudSQLDataSet.xsc">
-      <DependentUpon>CrudSQLDataSet.xsd</DependentUpon>
+    <None Include="DBExemploDataSet.xsc">
+      <DependentUpon>DBExemploDataSet.xsd</DependentUpon>
     </None>
-    <None Include="CrudSQLDataSet.xsd">
+    <None Include="DBExemploDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>CrudSQLDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>DBExemploDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="CrudSQLDataSet.xss">
-      <DependentUpon>CrudSQLDataSet.xsd</DependentUpon>
+    <None Include="DBExemploDataSet.xss">
+      <DependentUpon>DBExemploDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
