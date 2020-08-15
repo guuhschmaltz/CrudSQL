@@ -75,11 +75,6 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Banco de Dados\UsuarioDAL.cs" />
-    <Compile Include="DBExemploDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DBExemploDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Usuario.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -112,17 +107,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="DBExemploDataSet.xsc">
-      <DependentUpon>DBExemploDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="DBExemploDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DBExemploDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="DBExemploDataSet.xss">
-      <DependentUpon>DBExemploDataSet.xsd</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

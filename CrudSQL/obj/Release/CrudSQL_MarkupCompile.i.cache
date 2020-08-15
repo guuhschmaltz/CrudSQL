@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Solutions\CrudSQL\CrudSQL\obj\Debug\
+D:\Solutions\CrudSQL\CrudSQL\obj\Release\
 CrudSQL
 none
 false
-DEBUG;TRACE
+TRACE
 D:\Solutions\CrudSQL\CrudSQL\App.xaml
 11151548125
 
-776172280
+8-1001406552
 24-1796198852
 MainWindow.xaml;
 
-False
+True
 

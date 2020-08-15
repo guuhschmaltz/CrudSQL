@@ -24,7 +24,6 @@ namespace CrudSQL
         public MainWindow()
         {
             InitializeComponent();
-            ListarUsuarios();
         }
 
 

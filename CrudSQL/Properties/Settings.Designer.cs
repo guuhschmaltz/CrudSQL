@@ -22,27 +22,5 @@ namespace CrudSQL.Properties {
                 return defaultInstance;
             }
         }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=L002600;Initial Catalog=CrudSQL;Persist Security Info=True;User ID=sa" +
-            ";Password=1234")]
-        public string CrudSQLConnectionString {
-            get {
-                return ((string)(this["CrudSQLConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=L002600;Initial Catalog=DBExemplo;Persist Security Info=True;User ID=" +
-            "sa;Password=1234")]
-        public string DBExemploConnectionString {
-            get {
-                return ((string)(this["DBExemploConnectionString"]));
-            }
-        }
     }
 }

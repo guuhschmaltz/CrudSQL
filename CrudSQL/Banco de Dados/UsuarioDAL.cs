@@ -13,7 +13,8 @@ namespace CrudSQL.Banco_de_Dados
         private readonly string _connectionString;
         public UsuarioDAL()
         {
-            _connectionString = Properties.Settings.Default.DBExemploConnectionString;
+            //Aqui irá vir sua string de conexão//
+            //_connectionString = Properties.Settings.Default.DBExemploConnectionString;
         }
 
         public void Atualizar(Usuario u)
